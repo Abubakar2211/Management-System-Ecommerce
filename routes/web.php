@@ -19,5 +19,6 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('appearance.edit');
 });
 
+// Route::resource('')
 
 require __DIR__.'/auth.php';
