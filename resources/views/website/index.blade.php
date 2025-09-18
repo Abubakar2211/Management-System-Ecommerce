@@ -14,40 +14,40 @@
         <link
             rel="shortcut icon"
             type="image/x-icon"
-            href="images/favicon.png"
+            href="{{asset('website/images/favicon.png')}}"')}}"
         />
         <!-- Material Design Iconic Font-V2.2.0 -->
-        <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+        <link rel="stylesheet" href="{{asset('website/css/material-design-iconic-font.min.css')}}" />
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="{{asset('website/css/font-awesome.min.css')}}" />
         <!-- Font Awesome Stars-->
-        <link rel="stylesheet" href="css/fontawesome-stars.css" />
+        <link rel="stylesheet" href="{{asset('website/css/fontawesome-stars.css')}}" />
         <!-- Meanmenu CSS -->
-        <link rel="stylesheet" href="css/meanmenu.css" />
+        <link rel="stylesheet" href="{{asset('website/css/meanmenu.css')}}" />
         <!-- owl carousel CSS -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="{{asset('website/css/owl.carousel.min.css')}}" />
         <!-- Slick Carousel CSS -->
-        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="{{asset('website/css/slick.css')}}" />
         <!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="{{asset('website/css/animate.css')}}" />
         <!-- Jquery-ui CSS -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css" />
+        <link rel="stylesheet" href="{{asset('website/css/jquery-ui.min.css')}}" />
         <!-- Venobox CSS -->
-        <link rel="stylesheet" href="css/venobox.css" />
+        <link rel="stylesheet" href="{{asset('website/css/venobox.css')}}" />
         <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="css/nice-select.css" />
+        <link rel="stylesheet" href="{{asset('website/css/nice-select.css')}}" />
         <!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="{{asset('website/css/magnific-popup.css')}}" />
         <!-- Bootstrap V4.1.3 Fremwork CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{asset('website/css/bootstrap.min.css')}}" />
         <!-- Helper CSS -->
-        <link rel="stylesheet" href="css/helper.css" />
+        <link rel="stylesheet" href="{{asset('website/css/helper.css')}}" />
         <!-- Main Style CSS -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{{asset('website/style.css')}}" />
         <!-- Responsive CSS -->
-        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="{{asset('website/css/responsive.css')}}" />
         <!-- Modernizr js -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="{{asset('website/js/vendor/modernizr-2.8.3.min.js')}}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -142,7 +142,7 @@
                                                     <li class="active">
                                                         <a href="#"
                                                             ><img
-                                                                src="images/menu/flag-icon/1.jpg"
+                                                                src="{{asset('website/images/menu/flag-icon/1.jpg')}}"
                                                                 alt=""
                                                             />English</a
                                                         >
@@ -150,7 +150,7 @@
                                                     <li>
                                                         <a href="#"
                                                             ><img
-                                                                src="images/menu/flag-icon/2.jpg"
+                                                                src="{{asset('website/images/menu/flag-icon/2.jpg')}}"
                                                                 alt=""
                                                             />Français</a
                                                         >
@@ -176,7 +176,7 @@
                                 <div class="logo pb-sm-30 pb-xs-30">
                                     <a href="index">
                                         <img
-                                            src="images/menu/logo/1.jpg"
+                                            src="{{asset('website/images/menu/logo/1.jpg')}}"
                                             alt=""
                                         />
                                     </a>
@@ -425,7 +425,7 @@
                                                             class="minicart-product-image"
                                                         >
                                                             <img
-                                                                src="images/product/small-size/5.jpg"
+                                                                src="{{asset('website/images/product/small-size/5.jpg')}}"
                                                                 alt="cart products"
                                                             />
                                                         </a>
@@ -456,7 +456,7 @@
                                                             class="minicart-product-image"
                                                         >
                                                             <img
-                                                                src="images/product/small-size/6.jpg"
+                                                                src="{{asset('website/images/product/small-size/6.jpg')}}"
                                                                 alt="cart products"
                                                             />
                                                         </a>
@@ -1173,12 +1173,12 @@
                         <div class="col-lg-4 col-md-4 text-center pt-xs-30">
                             <div class="li-banner">
                                 <a href="#">
-                                    <img src="images/banner/1_1.jpg" alt="" />
+                                    <img src="{{asset('website/images/banner/1_1.jpg')}}" alt="" />
                                 </a>
                             </div>
                             <div class="li-banner mt-15 mt-sm-30 mt-xs-30">
                                 <a href="#">
-                                    <img src="images/banner/1_2.jpg" alt="" />
+                                    <img src="{{asset('website/images/banner/1_2.jpg')}}" alt="" />
                                 </a>
                             </div>
                         </div>
@@ -1235,7 +1235,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/1.jpg"
+                                                        src="{{asset('website/images/product/large-size/1.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -1345,7 +1345,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/2.jpg"
+                                                        src="{{asset('website/images/product/large-size/2.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -1463,7 +1463,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/3.jpg"
+                                                        src="{{asset('website/images/product/large-size/3.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -1573,7 +1573,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/4.jpg"
+                                                        src="{{asset('website/images/product/large-size/4.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -1691,7 +1691,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/5.jpg"
+                                                        src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -1801,7 +1801,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/6.jpg"
+                                                        src="{{asset('website/images/product/large-size/6.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -1929,7 +1929,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/12.jpg"
+                                                        src="{{asset('website/images/product/large-size/12.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2039,7 +2039,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/11.jpg"
+                                                        src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2157,7 +2157,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/10.jpg"
+                                                        src="{{asset('website/images/product/large-size/10.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2267,7 +2267,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/9.jpg"
+                                                        src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2385,7 +2385,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/8.jpg"
+                                                        src="{{asset('website/images/product/large-size/8.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2495,7 +2495,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/7.jpg"
+                                                        src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2623,7 +2623,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/3.jpg"
+                                                        src="{{asset('website/images/product/large-size/3.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2733,7 +2733,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/5.jpg"
+                                                        src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2851,7 +2851,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/7.jpg"
+                                                        src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -2961,7 +2961,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/9.jpg"
+                                                        src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3079,7 +3079,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/11.jpg"
+                                                        src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3189,7 +3189,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/12.jpg"
+                                                        src="{{asset('website/images/product/large-size/12.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3317,7 +3317,7 @@
                             <div class="single-banner">
                                 <a href="#">
                                     <img
-                                        src="images/banner/1_3.jpg"
+                                        src="{{asset('website/images/banner/1_3.jpg')}}"
                                         alt="Li's Static Banner"
                                     />
                                 </a>
@@ -3329,7 +3329,7 @@
                             <div class="single-banner">
                                 <a href="#">
                                     <img
-                                        src="images/banner/1_4.jpg"
+                                        src="{{asset('website/images/banner/1_4.jpg')}}"
                                         alt="Li's Static Banner"
                                     />
                                 </a>
@@ -3341,7 +3341,7 @@
                             <div class="single-banner">
                                 <a href="#">
                                     <img
-                                        src="images/banner/1_5.jpg"
+                                        src="{{asset('website/images/banner/1_5.jpg')}}"
                                         alt="Li's Static Banner"
                                     />
                                 </a>
@@ -3388,7 +3388,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/1.jpg"
+                                                        src="{{asset('website/images/product/large-size/1.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3498,7 +3498,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/2.jpg"
+                                                        src="{{asset('website/images/product/large-size/2.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3616,7 +3616,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/3.jpg"
+                                                        src="{{asset('website/images/product/large-size/3.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3726,7 +3726,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/4.jpg"
+                                                        src="{{asset('website/images/product/large-size/4.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3844,7 +3844,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/5.jpg"
+                                                        src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -3954,7 +3954,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/6.jpg"
+                                                        src="{{asset('website/images/product/large-size/6.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4106,7 +4106,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/3.jpg"
+                                                        src="{{asset('website/images/product/large-size/3.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4216,7 +4216,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/5.jpg"
+                                                        src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4334,7 +4334,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/7.jpg"
+                                                        src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4444,7 +4444,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/9.jpg"
+                                                        src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4562,7 +4562,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/11.jpg"
+                                                        src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4672,7 +4672,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/11.jpg"
+                                                        src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -4876,7 +4876,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/2.jpg"
+                                                                src="{{asset('website/images/product/large-size/2.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5006,7 +5006,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/4.jpg"
+                                                                src="{{asset('website/images/product/large-size/4.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5145,7 +5145,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/6.jpg"
+                                                                src="{{asset('website/images/product/large-size/6.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5275,7 +5275,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/8.jpg"
+                                                                src="{{asset('website/images/product/large-size/8.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5414,7 +5414,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/10.jpg"
+                                                                src="{{asset('website/images/product/large-size/10.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5544,7 +5544,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/12.jpg"
+                                                                src="{{asset('website/images/product/large-size/12.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5691,7 +5691,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/11.jpg"
+                                                                src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5821,7 +5821,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/7.jpg"
+                                                                src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -5960,7 +5960,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/9.jpg"
+                                                                src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6090,7 +6090,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/5.jpg"
+                                                                src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6229,7 +6229,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/7.jpg"
+                                                                src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6359,7 +6359,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/5.jpg"
+                                                                src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6506,7 +6506,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/3.jpg"
+                                                                src="{{asset('website/images/product/large-size/3.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6636,7 +6636,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/7.jpg"
+                                                                src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6775,7 +6775,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/9.jpg"
+                                                                src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -6905,7 +6905,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/1.jpg"
+                                                                src="{{asset('website/images/product/large-size/1.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -7044,7 +7044,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/11.jpg"
+                                                                src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -7174,7 +7174,7 @@
                                                             href="single-product"
                                                         >
                                                             <img
-                                                                src="images/product/large-size/9.jpg"
+                                                                src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                                 alt="Li's Product Image"
                                                             />
                                                         </a>
@@ -7335,7 +7335,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/11.jpg"
+                                                        src="{{asset('website/images/product/large-size/11.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -7445,7 +7445,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/7.jpg"
+                                                        src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -7563,7 +7563,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/9.jpg"
+                                                        src="{{asset('website/images/product/large-size/9.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -7673,7 +7673,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/5.jpg"
+                                                        src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -7791,7 +7791,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/7.jpg"
+                                                        src="{{asset('website/images/product/large-size/7.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -7901,7 +7901,7 @@
                                             <div class="product-image">
                                                 <a href="single-product">
                                                     <img
-                                                        src="images/product/large-size/5.jpg"
+                                                        src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                         alt="Li's Product Image"
                                                     />
                                                 </a>
@@ -8036,7 +8036,7 @@
                                     <div class="li-shipping-inner-box">
                                         <div class="shipping-icon">
                                             <img
-                                                src="images/shipping-icon/1.png"
+                                                src="{{asset('website/images/shipping-icon/1.png')}}""
                                                 alt="Shipping Icon"
                                             />
                                         </div>
@@ -8057,7 +8057,7 @@
                                     <div class="li-shipping-inner-box">
                                         <div class="shipping-icon">
                                             <img
-                                                src="images/shipping-icon/2.png"
+                                                src="{{asset('website/images/shipping-icon/2.png')}}""
                                                 alt="Shipping Icon"
                                             />
                                         </div>
@@ -8079,7 +8079,7 @@
                                     <div class="li-shipping-inner-box">
                                         <div class="shipping-icon">
                                             <img
-                                                src="images/shipping-icon/3.png"
+                                                src="{{asset('website/images/shipping-icon/3.png')}}""
                                                 alt="Shipping Icon"
                                             />
                                         </div>
@@ -8100,7 +8100,7 @@
                                     <div class="li-shipping-inner-box">
                                         <div class="shipping-icon">
                                             <img
-                                                src="images/shipping-icon/4.png"
+                                                src="{{asset('website/images/shipping-icon/4.png')}}""
                                                 alt="Shipping Icon"
                                             />
                                         </div>
@@ -8129,7 +8129,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-logo">
                                         <img
-                                            src="images/menu/logo/1.jpg"
+                                            src="{{asset('website/images/menu/logo/1.jpg')}}"
                                             alt="Footer Logo"
                                         />
                                         <p class="info">
@@ -8351,7 +8351,7 @@
                                 <div class="copyright text-center">
                                     <a href="#">
                                         <img
-                                            src="images/payment/1.png"
+                                            src="{{asset('website/images/payment/1.png')}}""
                                             alt=""
                                         />
                                     </a>
@@ -8397,37 +8397,37 @@
                                         >
                                             <div class="lg-image">
                                                 <img
-                                                    src="images/product/large-size/1.jpg"
+                                                    src="{{asset('website/images/product/large-size/1.jpg')}}"
                                                     alt="product image"
                                                 />
                                             </div>
                                             <div class="lg-image">
                                                 <img
-                                                    src="images/product/large-size/2.jpg"
+                                                    src="{{asset('website/images/product/large-size/2.jpg')}}"
                                                     alt="product image"
                                                 />
                                             </div>
                                             <div class="lg-image">
                                                 <img
-                                                    src="images/product/large-size/3.jpg"
+                                                    src="{{asset('website/images/product/large-size/3.jpg')}}"
                                                     alt="product image"
                                                 />
                                             </div>
                                             <div class="lg-image">
                                                 <img
-                                                    src="images/product/large-size/4.jpg"
+                                                    src="{{asset('website/images/product/large-size/4.jpg')}}"
                                                     alt="product image"
                                                 />
                                             </div>
                                             <div class="lg-image">
                                                 <img
-                                                    src="images/product/large-size/5.jpg"
+                                                    src="{{asset('website/images/product/large-size/5.jpg')}}"
                                                     alt="product image"
                                                 />
                                             </div>
                                             <div class="lg-image">
                                                 <img
-                                                    src="images/product/large-size/6.jpg"
+                                                    src="{{asset('website/images/product/large-size/6.jpg')}}"
                                                     alt="product image"
                                                 />
                                             </div>
@@ -8437,37 +8437,37 @@
                                         >
                                             <div class="sm-image">
                                                 <img
-                                                    src="images/product/small-size/1.jpg"
+                                                    src="{{asset('website/images/product/small-size/1.jpg')}}"
                                                     alt="product image thumb"
                                                 />
                                             </div>
                                             <div class="sm-image">
                                                 <img
-                                                    src="images/product/small-size/2.jpg"
+                                                    src="{{asset('website/images/product/small-size/2.jpg')}}"
                                                     alt="product image thumb"
                                                 />
                                             </div>
                                             <div class="sm-image">
                                                 <img
-                                                    src="images/product/small-size/3.jpg"
+                                                    src="{{asset('website/images/product/small-size/3.jpg')}}"
                                                     alt="product image thumb"
                                                 />
                                             </div>
                                             <div class="sm-image">
                                                 <img
-                                                    src="images/product/small-size/4.jpg"
+                                                    src="{{asset('website/images/product/small-size/4.jpg')}}"
                                                     alt="product image thumb"
                                                 />
                                             </div>
                                             <div class="sm-image">
                                                 <img
-                                                    src="images/product/small-size/5.jpg"
+                                                    src="{{asset('website/images/product/small-size/5.jpg')}}"
                                                     alt="product image thumb"
                                                 />
                                             </div>
                                             <div class="sm-image">
                                                 <img
-                                                    src="images/product/small-size/6.jpg"
+                                                    src="{{asset('website/images/product/small-size/6.jpg')}}"
                                                     alt="product image thumb"
                                                 />
                                             </div>
@@ -8683,47 +8683,47 @@
         </div>
         <!-- Body Wrapper End Here -->
         <!-- jQuery-V1.12.4 -->
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="{{asset('website/js/vendor/jquery-1.12.4.min.js')}}"></script>
         <!-- Popper js -->
-        <script src="js/vendor/popper.min.js"></script>
+        <script src="{{asset('website/js/vendor/popper.min.js')}}"></script>
         <!-- Bootstrap V4.1.3 Fremwork js -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{asset('website/js/bootstrap.min.js')}}"></script>
         <!-- Ajax Mail js -->
-        <script src="js/ajax-mail.js"></script>
+        <script src="{{asset('website/js/ajax-mail.js')}}"></script>
         <!-- Meanmenu js -->
-        <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="{{asset('website/js/jquery.meanmenu.min.js')}}"></script>
         <!-- Wow.min js -->
-        <script src="js/wow.min.js"></script>
+        <script src="{{asset('website/js/wow.min.js')}}"></script>
         <!-- Slick Carousel js -->
-        <script src="js/slick.min.js"></script>
+        <script src="{{asset('website/js/slick.min.js')}}"></script>
         <!-- Owl Carousel-2 js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{{asset('website/js/owl.carousel.min.js')}}"></script>
         <!-- Magnific popup js -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="{{asset('website/js/jquery.magnific-popup.min.js')}}"></script>
         <!-- Isotope js -->
-        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="{{asset('website/js/isotope.pkgd.min.js')}}"></script>
         <!-- Imagesloaded js -->
-        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="{{asset('website/js/imagesloaded.pkgd.min.js')}}"></script>
         <!-- Mixitup js -->
-        <script src="js/jquery.mixitup.min.js"></script>
+        <script src="{{asset('website/js/jquery.mixitup.min.js')}}"></script>
         <!-- Countdown -->
-        <script src="js/jquery.countdown.min.js"></script>
+        <script src="{{asset('website/js/jquery.countdown.min.js')}}"></script>
         <!-- Counterup -->
-        <script src="js/jquery.counterup.min.js"></script>
+        <script src="{{asset('website/js/jquery.counterup.min.js')}}"></script>
         <!-- Waypoints -->
-        <script src="js/waypoints.min.js"></script>
+        <script src="{{asset('website/js/waypoints.min.js')}}"></script>
         <!-- Barrating -->
-        <script src="js/jquery.barrating.min.js"></script>
+        <script src="{{asset('website/js/jquery.barrating.min.js')}}"></script>
         <!-- Jquery-ui -->
-        <script src="js/jquery-ui.min.js"></script>
+        <script src="{{asset('website/js/jquery-ui.min.js')}}"></script>
         <!-- Venobox -->
-        <script src="js/venobox.min.js"></script>
+        <script src="{{asset('website/js/venobox.min.js')}}"></script>
         <!-- Nice Select js -->
-        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="{{asset('website/js/jquery.nice-select.min.js')}}"></script>
         <!-- ScrollUp js -->
-        <script src="js/scrollUp.min.js"></script>
+        <script src="{{asset('website/js/scrollUp.min.js')}}"></script>
         <!-- Main/Activator js -->
-        <script src="js/main.js"></script>
+        <script src="{{asset('website/js/main.js')}}"></script>
     </body>
 
     <!-- index30:23-->
