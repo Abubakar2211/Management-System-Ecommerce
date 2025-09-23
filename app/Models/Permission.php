@@ -9,9 +9,6 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
 class Permission extends SpatiePermission
 {
     protected $fillable = ['name','guard_name'];
-    protected $attributes = [
-        'guard_name' => 'web',
-    ];
     
      protected function name():Attribute{
         return Attribute::make(

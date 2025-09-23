@@ -15,8 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with(['roles:id,name','roles.permissions:id,name','permissions:id,name'])
-                           ->cursorPaginate(5,['id', 'name', 'email']);
+        $users = User::with(['roles:id,name', 'roles.permissions:id,name', 'permissions:id,name'])
+            ->cursorPaginate(5, ['id', 'name', 'email']);
         $roles = Role::get(['id', 'name']);
         $permissions = Permission::get(['id', 'name']);
         return view('user.index', compact('users', 'roles', 'permissions'));
@@ -69,7 +69,8 @@ class UserController extends Controller
     {
         //
     }
-    public function demo(){
+    public function demo()
+    {
         // Cache::put('email','Abubakar192005@gmail.com',$second=10);
         // Cache::put('state','Abubakar',now()->addSeconds(10));
         // Cache::remember('state',5,function(){

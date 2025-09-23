@@ -1,21 +1,18 @@
 <?php
 
-use App\Http\Controllers\PermissionController;
-use App\Http\Controllers\RoleController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\Api\Auth\AuthController;
+use App\Http\Controllers\Api\Permission\PermissionController;
+use App\Http\Controllers\Api\Role\RoleController;
+use App\Http\Controllers\Api\User\UserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\PaymentController;
 
-Route::resource('order', OrderController::class);
-Route::resource('product', ProductController::class);
-Route::post('productbuy/{product}', [ProductController::class, 'productbuy'])->name('productbuy');
-Route::get('cardview', [OrderController::class, 'cardview'])->name('cardview');
-Route::post('/payment/process', [PaymentController::class, 'process'])->name('payment.process');
-Route::resource('role', RoleController::class);
-Route::resource('permission', PermissionController::class);
-Route::resource('user', UserController::class);
-Route::post('addPermissionToRole/{role}', [RoleController::class, 'addPermissionToRole'])->name('addPermissionToRole');
-Route::post('assignPermissionsToUser/{user}', [PermissionController::class, 'assignPermissionsToUser'])->name('assignPermissionsToUser');
-Route::post('assignRolesToUser/{user}', [RoleController::class, 'assignRolesToUser'])->name('assignRolesToUser');
+Route::post('login', [AuthController::class, 'login']);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::resource('user',(UserController::class));
+    Route::resource('role',(RoleController::class));
+    Route::resource('permission',(PermissionController::class));
+    Route::post('assignPermission/{role}',[RoleController::class,'addPermissionToRole']);
+    Route::post('assignRoleToUser/{user}',[RoleController::class,'assignRolesToUser']);
+    Route::post('assignPermissionsToUser/{user}',[PermissionController::class,'assignPermissionsToUser']);
+});
