@@ -13,8 +13,6 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('demo',[UserController::class,'demo']);
-
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
@@ -25,21 +23,24 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/profile', 'settings.profile')->name('profile.edit');
     Volt::route('settings/password', 'settings.password')->name('password.edit');
     Volt::route('settings/appearance', 'settings.appearance')->name('appearance.edit');
+
+    // Admin panel
+    Route::resource('user', (UserController::class));
 });
 
-Route::view('/404', 'website.404')->name('404');
-Route::view('/about', 'website.about')->name('about');
-Route::view('/blog-details', 'website.blog-details')->name('blog-details');
-Route::view('/blog', 'website.blog')->name('blog');
-Route::view('/checkout', 'website.checkout')->name('checkout');
-Route::view('/compare', 'website.compare')->name('compare');
-Route::view('/contact', 'website.contact')->name('contact');
-Route::view('/faq', 'website.faq')->name('faq');
-Route::view('/index', 'website.index')->name('index');
-Route::view('/login-register', 'website.login-register')->name('login-register');
-Route::view('/product-details', 'website.product-details')->name('product-details');
-Route::view('/shop-list', 'website.shop-list')->name('shop-list');
-Route::view('/shopping-cart', 'website.shopping-cart')->name('shopping-cart');
-Route::view('/wishlist', 'website.wishlist')->name('wishlist');
+// Route::view('/404', 'website.404')->name('404');
+// Route::view('/about', 'website.about')->name('about');
+// Route::view('/blog-details', 'website.blog-details')->name('blog-details');
+// Route::view('/blog', 'website.blog')->name('blog');
+// Route::view('/checkout', 'website.checkout')->name('checkout');
+// Route::view('/compare', 'website.compare')->name('compare');
+// Route::view('/contact', 'website.contact')->name('contact');
+// Route::view('/faq', 'website.faq')->name('faq');
+// Route::view('/index', 'website.index')->name('index');
+// Route::view('/login-register', 'website.login-register')->name('login-register');
+// Route::view('/product-details', 'website.product-details')->name('product-details');
+// Route::view('/shop-list', 'website.shop-list')->name('shop-list');
+// Route::view('/shopping-cart', 'website.shopping-cart')->name('shopping-cart');
+// Route::view('/wishlist', 'website.wishlist')->name('wishlist');
 
 require __DIR__.'/auth.php';

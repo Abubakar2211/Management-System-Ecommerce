@@ -18,10 +18,12 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::with(['product:id,name,price,stock,description,image', 'user:id,name,email'])
-                        ->where('status', 'Completed')->orderby('id', 'desc')
-                        ->cursorPaginate(2,['id','user_id','product_id','quantity','status']);
-        return view('order.index', compact('orders'));
+        $orders = Order::get();
+        return response()->json(['orders'=>$orders]);
+        // $orders = Order::with(['product:id,name,price,stock,description,image', 'user:id,name,email'])
+        //                 ->where('status', 'Completed')->orderby('id', 'desc')
+        //                 ->cursorPaginate(2,['id','user_id','product_id','quantity','status']);
+        // return view('order.index', compact('orders'));
     }
 
     /**
