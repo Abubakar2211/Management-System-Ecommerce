@@ -27,23 +27,30 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'max:255', 'unique:users,email'],
+            'password' => ['required', 'string', 'max:255'],
+            'password_confirmation' => ['required', 'string', 'max:255', 'same:password'],
+        ]);
+        $user = User::create($validate);
+        return response()->json(['message' => "$user->name User Create Successfully."]);
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request,User $user)
     {
-        //
+        $validate = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'max:255', 'unique:users,email'],
+            'password' => ['required', 'string', 'max:255'],
+            'password_confirmation' => ['required', 'string', 'max:255', 'same:password'],
+        ]);
+        $user->update($validate);
+        return response()->json(['message' => "$user->name User Create Successfully."]);
     }
 
     /**

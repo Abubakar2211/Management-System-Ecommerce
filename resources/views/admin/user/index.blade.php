@@ -42,21 +42,21 @@
                     </td>
                     <td class="p-4">
                         <div class="flex items-center">
-                            <a href="{{ route('assignUserToRole') }}" title="Assign Role" class="cursor-pointer mr-3">
+                            {{-- <a href="{{ route('assignUserToRole') }}" title="Assign Role" class="cursor-pointer mr-3">
                                 <i class="fa-solid fa-user-tag"></i>
                             </a>
                             <a href="{{ route('assignUserToPermission') }}" title="Assign Permission"
                                 class="cursor-pointer mr-3">
                                 <i class="fa-solid fa-key"></i>
-                            </a>
-                            <a href="{{ route('user.edit') }}" class="mr-3 cursor-pointer" title="Edit">
+                            </a> --}}
+                            {{-- <a href="{{ route('user.edit') }}" class="mr-3 cursor-pointer" title="Edit">
                                 <i class="fa-solid fa-pen"></i>
                             </a>
                             <form action="{{ route('user.destroy') }}">
                                 <button title="Delete" class="cursor-pointer">
                                     <i class="fa-solid fa-delete-left"></i>
                                 </button>
-                            </form>
+                            </form> --}}
                         </div>
                     </td>
                 </tr>
