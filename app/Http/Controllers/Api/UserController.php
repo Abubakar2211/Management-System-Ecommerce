@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Permission;
 use App\Models\Role;
 use App\Models\User;
+use Exception;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -27,21 +28,25 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $validate = $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'max:255', 'unique:users,email'],
-            'password' => ['required', 'string', 'max:255'],
-            'password_confirmation' => ['required', 'string', 'max:255', 'same:password'],
-        ]);
-        $user = User::create($validate);
-        return response()->json(['message' => "$user->name User Create Successfully."]);
+        try {
+            $validate = $request->validate([
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'max:255', 'unique:users,email'],
+                'password' => ['required', 'string', 'max:255'],
+                'password_confirmation' => ['required', 'string', 'max:255', 'same:password'],
+            ]);
+            $user = User::create($validate);
+            return response()->json(['message' => "$user->name User Create Successfully."]);
+        } catch (Exception $e) {
+            return response()->json(['error' => $e->getMessage()]);
+        }
     }
 
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request,User $user)
+    public function update(Request $request, User $user)
     {
         $validate = $request->validate([
             'name' => ['required', 'string', 'max:255'],

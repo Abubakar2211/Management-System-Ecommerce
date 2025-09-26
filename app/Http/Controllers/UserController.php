@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Permission;
+use Http;
 use Illuminate\Http\Request;
-use App\Models\User;
-use App\Models\Role;
 use Illuminate\Support\Facades\Cache;
 
 class UserController extends Controller
@@ -31,7 +29,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $store = env(BASE_URL_API."");
+        $response = Http::post(
+            env('BASE_URL_API') . '/api/user',
+            [
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => $request->password,
+                'password_confirmation' => $request->password_confirmation,
+            ]
+        );
+
+        if ($response->successful()) {
+            return redirect()->back()->with('message', 'User Created Successfully.');
+        } else {
+            return redirect()->back()->with('error', 'User Creation Failed.');
+        }
     }
 
     /**
